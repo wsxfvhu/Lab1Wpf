@@ -1,0 +1,32 @@
+﻿<Window x:Class="Lab1Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1Wpf"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="560" Width="400" Foreground="{x:Null}" Background="#FFBDC2E6">
+    <Grid Margin="20,10,20,10" ShowGridLines="True">
+        <TextBlock Margin="10,20,10,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="60" FontFamily="Arial Black" FontSize="48" FontWeight="Normal" FontStyle="Normal" TextDecorations="{x:Null}" TextAlignment="Right" Panel.ZIndex="1" Grid.RowSpan="10" Visibility="Visible" OverridesDefaultStyle="True" Foreground="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" OpacityMask="#FF141212" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="280,280,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="280,120,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF111010" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0B0B0B"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="280,200,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF100101" FontFamily="Arial" FontSize="24" Foreground="#FF0E0D0D" BorderBrush="#FF0E0D0D"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="280,360,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="185,280,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" Foreground="#FF0E0D0D" BorderBrush="#FF0E0D0D"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="185,440,0,0" VerticalAlignment="Top" Width="175" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="+/-" HorizontalAlignment="Left" Margin="185,120,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF080707" FontFamily="Arial" FontSize="24" BorderBrush="#FF080606" Foreground="#FF090909"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="185,200,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="185,360,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="92,280,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF100101" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="92,440,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" Foreground="#FF0E0D0D" BorderBrush="#FF0E0D0D"/>
+        <Button Content="&lt;-" HorizontalAlignment="Left" Margin="92,120,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF090909" FontFamily="Arial" FontSize="24" BorderBrush="#FF111010" Foreground="#FF0C0C0C"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="92,200,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0B0A0A"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="92,360,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF100101" FontFamily="Arial" FontSize="24" Foreground="#FF0E0D0D" BorderBrush="#FF0E0D0D"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="0,280,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF100101" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="0,440,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0E0D0D" FontFamily="Arial" FontSize="24" BorderBrush="#FF0E0D0D" Foreground="#FF0E0D0D"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="0,120,0,0" VerticalAlignment="Top" IsEnabled="False" Background="#FF080707" FontFamily="Arial" FontSize="24" Height="60" Width="80" Foreground="#FF060404" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" RenderTransformOrigin="0,0"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="0,200,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF0C0C0C" FontFamily="Arial" FontSize="24" BorderBrush="#FF0C0C0C" Foreground="#FF0B0A0A"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="0,360,0,0" VerticalAlignment="Top" Width="80" Height="60" IsEnabled="False" Background="#FF100101" FontFamily="Arial" FontSize="24" Foreground="#FF0E0D0D"/>
+
+    </Grid>
+</Window>
